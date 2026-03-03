@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meu Material Digital</title>
+</head>
+
+<body>
+	<div>
+            <header>
+         <h1> Material Digital</h1>
+	 <p>MATÉRIA: Fundamentos e arquitetura de computadores<br> CONTEÚDO: Portas Lógicas</p>
+	    </header><hr>
+<p> Portas lógicas são componentes básicos da eletrônica digital responsáveis por realizar operações lógicas a partir de sinais binários (0 e 1). Elas são fundamentais no funcionamento de computadores, pois permitem o processamento de informações por meio de circuitos.
+<hr></p>
+	<h2> <ul type ="square">
+<li>Principais portas lógicas:</li>
+</ul>
+	</h2>
+	 
+<p> 1 - AND (E) → Só gera saída 1 quando todas as entradas são 1.<br>
+	<img src="https://embarcados.com.br/wp-content/uploads/2023/03/image-38-edited.png" alt="Porta AND"><br><br>
+     2 - OR (OU) → Gera saída 1 quando pelo menos uma das entradas é 1.<br>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS9g3JKrjU9huhBGyOC724cuPdR4H88x77_w&s"alt="Porta OR"><br><br>
+     3 - NOT (NÃO) → Inverte o valor da entrada (se for 1, vira 0; se for 0, vira 1).<br>
+	<img src="https://embarcados.com.br/wp-content/uploads/2023/03/image-37-edited.png"alt="Porta NOT"><br><br>
+     4 - XOR (OU Exclusivo) → Gera saída 1 quando as entradas são diferentes.<br>
+	<img src="https://cdn-wcsm.alura.com.br/2025/04/imagem9-30.jpg"alt="Porta XOR"><br><br>
+</p>
+
+	<hr>
+
+<h2> <ul type ="square">
+<li>Tabela verdade:</li>
+</ul></h2>
+
+<p>É uma tabela que mostra todas as combinações possíveis de entradas (0 e 1) e qual será a saída da porta lógica.</p>
+
+<!-- AND -->
+<h3>AND (A · B)</h3>
+<table border="1">
+    <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>Saída</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- OR -->
+<h3>OR (A + B)</h3>
+<table border="1">
+    <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>Saída</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- XOR -->
+<h3>XOR (A ⊕ B)</h3>
+<table border="1">
+    <tr>
+        <th>A</th>
+        <th>B</th>
+        <th>Saída</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- NOT -->
+<h3>NOT (¬A)</h3>
+<table border="1">
+    <tr>
+        <th>A</th>
+        <th>Saída</th>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<hr>
+
+<h2><ul type ="square">
+<li>Formulário Portas Lógicas:</li>
+</ul>
+
+<p>Responda às perguntas abaixo para testar o material digital:</p>
+
+<form>
+
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <!-- Pergunta 1 -->
+    <p>1) Qual porta lógica só gera saída 1 quando todas as entradas são 1?</p>
+    <input type="radio" name="p1" value="OR"> OR<br>
+    <input type="radio" name="p1" value="AND"> AND<br>
+    <input type="radio" name="p1" value="XOR"> XOR<br><br>
+
+    <!-- Pergunta 2 -->
+    <p>2) Qual porta lógica inverte o valor da entrada?</p>
+    <input type="radio" name="p2" value="NOT"> NOT<br>
+    <input type="radio" name="p2" value="AND"> AND<br>
+    <input type="radio" name="p2" value="OR"> OR<br><br>
+
+    <!-- Pergunta 3 -->
+    <p>3) A porta XOR gera saída 1 quando:</p>
+    <input type="radio" name="p3" value="iguais"> As entradas são iguais<br>
+    <input type="radio" name="p3" value="diferentes"> As entradas são diferentes<br><br>
+
+    <input type="submit" value="Enviar Respostas">
+
+</form>
+
+</div>
+</body>
+</html>
