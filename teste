@@ -6,6 +6,14 @@
     <meta name="author" content="Portal Computação">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquivo Confuso da Computação</title>
+
+   <style>
+        /* NAV */
+        #menu-principal a {
+            color: #e873fc;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,14 +23,16 @@
     <header id="topo">
         <h1>Arquivo (Quase) Perdido da Ciência da Computação</h1>
         <p>Uma coletânea caótica de fatos históricos, curiosos e inesperados.</p>
+
+        #topo a {
+  color: #d783ff;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(1,5,2,0.30);
+}
+
     </header>
 
     <nav id="menu-principal">
-       /* NAV */
-         #navPreview {
-         display: flex;
-       /* nav a color */ color: #e873fc;
-}
 #navPreview a { color: #e873fc; }
         <ul>
             <li><a href="#pioneiros">Pioneiros</a></li>
