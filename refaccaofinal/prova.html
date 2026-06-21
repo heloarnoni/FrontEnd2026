@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copa do Mundo FIFA 2026 - Fase de Grupos</title>
+
+<style>
+    :root {
+        --primary: #8B5C77;
+        --accent: #E8A0BF;
+        --accent-2: #B68FCE;
+        --bg: #FBF1F6;
+        --card-bg: #FFFFFF;
+        --text: #4A3B47;
+        --border-soft: #F3D9E6;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        margin: 0;
+        padding: 0 20px 60px;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px 20px;
+    }
+
+    header h1 {
+        color: var(--primary);
+        margin-bottom: 4px;
+        font-size: 2em;
+    }
+
+    header h2 {
+        color: var(--accent-2);
+        font-weight: 500;
+        margin-top: 0;
+        font-size: 1.1em;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .grupos-container,
+    .jogadores-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        margin-bottom: 10px;
+    }
+
+    .grupo-card {
+        background-color: var(--card-bg);
+        border: 2px solid var(--border-soft);
+        border-radius: 16px;
+        padding: 24px;
+        width: 250px;
+        box-shadow: 0 6px 16px rgba(139, 92, 119, 0.12);
+        transition: transform 0.2s ease;
+    }
+
+    .grupo-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .grupo-card h3 {
+        color: var(--primary);
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .grupo-card h4 {
+        color: var(--accent-2);
+        font-size: 0.95em;
+        margin: 0 0 6px;
+    }
+
+    .grupo-card ul {
+        padding-left: 20px;
+        margin: 0 0 14px;
+    }
+
+    .grupo-card li {
+        margin-bottom: 4px;
+    }
+
+    details {
+        background-color: #FDF6FA;
+        border-left: 4px solid var(--accent);
+        border-radius: 8px;
+        padding: 10px 14px;
+    }
+
+    details summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--primary);
+    }
+
+    details p {
+        margin: 8px 0 0;
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .botao-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background-color: var(--accent);
+        color: #ffffff;
+        border: none;
+        padding: 12px 36px;
+        border-radius: 24px;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(232, 160, 191, 0.45);
+    }
+
+    button:hover {
+        background-color: var(--accent-2);
+    }
+
+    .divisor {
+        height: 2px;
+        background-color: var(--border-soft);
+        max-width: 600px;
+        margin: 50px auto 30px;
+        border-radius: 2px;
+    }
+
+    .titulo-secao {
+        text-align: center;
+        color: var(--primary);
+        margin-bottom: 24px;
+    }
+
+    .jogadores-container {
+        min-height: 40px;
+    }
+
+    .jogador-card {
+        background-color: var(--card-bg);
+        border: 2px solid var(--border-soft);
+        border-radius: 16px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        box-shadow: 0 6px 16px rgba(139, 92, 119, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jogador-foto {
+        width: 160px;
+        height: 200px;
+        border-radius: 12px;
+        margin-bottom: 14px;
+        object-fit: cover;
+        border: 3px solid var(--accent);
+    }
+
+    .jogador-nome {
+        color: var(--primary);
+        margin: 4px 0 10px;
+        font-size: 1.05em;
+    }
+
+    .jogador-info {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        font-size: 0.85em;
+        line-height: 1.6;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Copa do Mundo FIFA 2026</h1>
+        <h2>Fase de Grupos</h2>
+    </header>
+    <main>
+        <div class="grupos-container" id="fase-1">
+            <div class="grupo-card" id="grupo-a">
+                <h3>🅰️ Grupo A</h3>
+                <h4>Seleções</h4>
+                <ul>
+                    <li>México</li>
+                    <li>África do Sul</li>
+                    <li>Coreia do Sul</li>
+                    <li>República Tcheca</li>
+                </ul>
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>O jogo de abertura será México x África do Sul. Confrontos entre Coreia do Sul e seleções europeias já ocorreram em várias Copas, com histórico equilibrado.</p>
+                </details>
+            </div>
+            <div class="grupo-card" id="grupo-b">
+                <h3>🅱️ Grupo B</h3>
+                <h4>Seleções</h4>
+                <ul>
+                    <li>Canadá</li>
+                    <li>Suíça</li>
+                    <li>Catar</li>
+                    <li>Vaga Europeia (Bósnia)</li>
+                </ul>
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>O Canadá joga em casa, fator importante de desempenho. Catar e Suíça já se enfrentaram recentemente em amistosos internacionais.</p>
+                </details>
+            </div>
+            <div class="grupo-card" id="grupo-c">
+                <h3>🅲 Grupo C</h3>
+                <h4>Seleções</h4>
+                <ul>
+                    <li>Brasil</li>
+                    <li>Marrocos</li>
+                    <li>Haiti</li>
+                    <li>Escócia</li>
+                </ul>
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>Brasil, Marrocos e Escócia já dividiram grupo em 1998. Brasil nunca perdeu para a Escócia em Copas.</p>
+                </details>
+            </div>
+        </div>
+        <div class="grupos-container" id="fase-2" style="display: none;">
+            <div class="grupo-card" id="grupo-d">
+                <h3>🅳 Grupo D</h3>
+                <h4>Seleções</h4>
+                <ul>
+                    <li>Estados Unidos</li>
+                    <li>Paraguai</li>
+                    <li>Austrália</li>
+                    <li>Turquia</li>
+                </ul>
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>Os EUA jogam em casa, vantagem histórica em Copas. Austrália enfrenta frequentemente seleções sul-americanas em torneios.</p>
+                </details>
+            </div>
+            <div class="grupo-card" id="grupo-e">
+                <h3>🅴 Grupo E</h3>
+                <h4>Seleções</h4>
+                <ul>
+                    <li>Alemanha</li>
+                    <li>Equador</li>
+                    <li>Costa do Marfim</li>
+                    <li>Curaçao</li>
+                </ul>
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>Alemanha costuma dominar fases de grupos. Equador e Costa do Marfim têm estilos físicos semelhantes.</p>
+                </details>
+            </div>
+            <div class="grupo-card" id="grupo-f">
+                <h3>🅵 Grupo F</h3>
+                <h4>Seleções</h4>
+                <ul>
+                    <li>Holanda</li>
+                    <li>Japão</li>
+                    <li>Tunísia</li>
+                    <li>Suécia</li>
+                </ul>
+                <details>
+                    <summary>Saiba Mais</summary>
+                    <p>Brasil, Marrocos e Escócia já dividiram grupo em 1998. Brasil nunca perdeu para a Escócia em Copas.</p>
+                </details>
+            </div>
+        </div>
+        <div class="botao-area">
+            <button id="btn-proximo" onclick="alternarGrupos()">Próximo</button>
+        </div>
+        <div class="divisor"></div>
+        <h2 class="titulo-secao">Elenco</h2>
+        <div class="jogadores-container" id="lista-jogadores">
+        </div>
+        <div class="botao-area">
+            <button onclick="add()">Adicionar Novo Jogador</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
