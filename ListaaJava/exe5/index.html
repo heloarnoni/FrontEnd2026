@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Infinity Bank - Lista de Convidados VIP</title>
+  <style>
+    .card {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .classe-riscado {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Infinity Bank - Lista de Convidados VIP</h1>
+
+    <input type="text" id="nomeConvidado" placeholder="Nome do convidado">
+    <button id="btnAdicionar">Adicionar</button>
+
+    <ul id="listaConvidados"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
